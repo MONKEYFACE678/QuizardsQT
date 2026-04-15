@@ -27,6 +27,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
+    bool eventFilter(QObject *object, QEvent *event);
+
     FlashCardManager manager;
     FlashCard currentCard;
 };

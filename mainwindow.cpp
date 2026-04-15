@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include <QKeyEvent>
 
 MainWindow::~MainWindow()
 {
@@ -12,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->answerInput->installEventFilter(this);
+
     manager.getCards();
 
     if (!manager.isEmpty()) {
@@ -21,6 +24,21 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->submitButton, &QPushButton::clicked,
             this, &MainWindow::onSubmit);
+}
+
+bool MainWindow::eventFilter(QObject *object, QEvent *event)
+{
+    if ( object == ui->answerInput &&  ( event->type() == QEvent::HoverEnter )  ) {
+        ui->answerInput->setText("");
+    }
+
+    if ( object == ui->answerInput &&  (event->type() == QEvent::KeyPress )  ) {
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+        if (keyEvent->key() == Qt::Key_Return) {
+            onSubmit();
+        }
+    }
+    return false;
 }
 
 void MainWindow::onSubmit() {
@@ -33,6 +51,8 @@ void MainWindow::onSubmit() {
 
         if (manager.isEmpty()) {
             ui->definitionLabel->setText("All done!");
+            ui->answerInput->setText("");
+            ui->answerInput->setEnabled(false);
             ui->submitButton->setEnabled(false);
             return;
         }
