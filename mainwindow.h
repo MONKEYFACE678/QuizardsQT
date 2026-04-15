@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QDialog>
 #include <QMainWindow>
 #include <QPushButton>
 #include <QLabel>
