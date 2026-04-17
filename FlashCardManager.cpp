@@ -8,6 +8,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+#include <QString>
+#include <QFile>
+#include <QIODevice>
+#include <QStandardPaths>
+#include <QDir>
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -16,9 +21,39 @@ void FlashCardManager::getCards() {
     //Seed random 
     std::srand(std::time(0));
 
+    QString dirPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir().mkpath(dirPath);
+
+    QString path = dirPath + "/cards.json";
+    QFile file(path);
+
+    if (!file.exists()) {
+        if (file.open(QIODevice::WriteOnly)) {
+            json defaultData = {
+                {"cards", {
+                    {
+                        {"term", "This is how you format it"},
+                        {"def", std::string("Make cards at ") + path.toStdString()}
+                    },
+                    {
+                        {"term", "This is the word you must enter"},
+                        {"def", std::string("Make cards at ") + path.toStdString() + " You can make multiple"}
+                    }
+                }}
+            };
+
+            file.write(defaultData.dump(4).c_str()); // pretty print
+            file.close();
+        }
+    }
+
+    /*
+
+    */
+
     //Try parsing json, then adds each item in cards as a flashcard into cards vector
     try {
-        std::ifstream infile("cards.json");
+        std::ifstream infile(path.toStdString());
 
         json data = json::parse(infile);
 
@@ -27,7 +62,7 @@ void FlashCardManager::getCards() {
         }
     }
     catch (const std::exception& e) {
-        cards.push_back((FlashCard("No cards", "No cards")));
+        cards.push_back((FlashCard("No cards. Add cards at " + path.toStdString() + "/cards.json", "No cards")));
         std::cerr << "Error parsing JSON: " << e.what() << std::endl;
     }
 }

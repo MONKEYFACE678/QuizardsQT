@@ -24,6 +24,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->submitButton, &QPushButton::clicked,
             this, &MainWindow::onSubmit);
+
+    ui->definitionLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 }
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
