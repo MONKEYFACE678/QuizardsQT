@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+
 #include <QDialog>
-#include <QMainWindow>
 #include <QPushButton>
 #include <QLabel>
 #include <QTextEdit>
@@ -13,7 +13,7 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
