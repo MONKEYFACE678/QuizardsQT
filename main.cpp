@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[])
 {
+    //other test change
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
