@@ -53,7 +53,7 @@ public:
         answerInput->setGeometry(QRect(330, 270, 113, 28));
         definitionLabel = new QLabel(centralwidget);
         definitionLabel->setObjectName("definitionLabel");
-        definitionLabel->setGeometry(QRect(210, 150, 331, 81));
+        definitionLabel->setGeometry(QRect(200, 140, 581, 81));
         feedbackLabel = new QLabel(centralwidget);
         feedbackLabel->setObjectName("feedbackLabel");
         feedbackLabel->setGeometry(QRect(220, 390, 331, 81));
