@@ -42,6 +42,9 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        centralwidget->setGeometry(QRect(0, 0, 761, 621));
+        centralwidget->setMinimumSize(QSize(761, 621));
+        centralwidget->setMaximumSize(QSize(761, 621));
         submitButton = new QPushButton(centralwidget);
         submitButton->setObjectName("submitButton");
         submitButton->setGeometry(QRect(220, 310, 321, 51));
@@ -61,6 +64,7 @@ public:
         menuQuizards->setObjectName("menuQuizards");
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
+        statusbar->setGeometry(QRect(0, 0, 3, 22));
 
         menubar->addAction(menuQuizards->menuAction());
 

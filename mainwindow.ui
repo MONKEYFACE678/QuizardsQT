@@ -13,7 +13,27 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>761</width>
+     <height>621</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>761</width>
+     <height>621</height>
+    </size>
+   </property>
    <widget class="QPushButton" name="submitButton">
     <property name="geometry">
      <rect>
@@ -83,7 +103,16 @@
    </widget>
    <addaction name="menuQuizards"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
