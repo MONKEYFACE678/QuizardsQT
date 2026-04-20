@@ -12,9 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -35,7 +35,7 @@ public:
     QMenu *menuQuizards;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QDialog *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
@@ -54,16 +54,13 @@ public:
         feedbackLabel = new QLabel(centralwidget);
         feedbackLabel->setObjectName("feedbackLabel");
         feedbackLabel->setGeometry(QRect(220, 390, 331, 81));
-        MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 800, 25));
         menuQuizards = new QMenu(menubar);
         menuQuizards->setObjectName("menuQuizards");
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menuQuizards->menuAction());
 
@@ -72,7 +69,7 @@ public:
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QDialog *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         submitButton->setText(QCoreApplication::translate("MainWindow", "Submit", nullptr));
