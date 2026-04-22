@@ -4,10 +4,8 @@
 
 int main(int argc, char *argv[])
 {
-    //other test change
     QApplication a(argc, argv);
     TitleWindow w;
     w.show();
     return QCoreApplication::exec();
-    //test change
 }

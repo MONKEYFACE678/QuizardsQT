@@ -47,10 +47,6 @@ void FlashCardManager::getCards() {
         }
     }
 
-    /*
-
-    */
-
     //Try parsing json, then adds each item in cards as a flashcard into cards vector
     try {
         std::ifstream infile(path.toStdString());

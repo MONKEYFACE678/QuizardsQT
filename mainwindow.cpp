@@ -30,14 +30,16 @@ MainWindow::MainWindow(QWidget *parent)
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
+    //On mouse hover clear text box
     if ( object == ui->answerInput &&  ( event->type() == QEvent::HoverEnter )  ) {
         ui->answerInput->setText("");
     }
-
+    //On press enter, press submit button
     if ( object == ui->answerInput &&  (event->type() == QEvent::KeyPress )  ) {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
         if (keyEvent->key() == Qt::Key_Return) {
             onSubmit();
+            return true;
         }
     }
     return false;
@@ -65,7 +67,7 @@ void MainWindow::onSubmit() {
             );
     } else {
         ui->feedbackLabel->setText(
-            "Try again! Term: " +
+            "Wrong Answer! Answer was " +
             QString::fromStdString(currentCard.getTerm())
             );
         currentCard = manager.randomCard();
