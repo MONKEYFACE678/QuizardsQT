@@ -15,11 +15,13 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->answerInput->installEventFilter(this);
 
-    manager.getCards();
+    manager.loadCards();
 
     if (!manager.isEmpty()) {
         currentCard = manager.randomCard();
         ui->definitionLabel->setText(QString::fromStdString(currentCard.getDef()));
+    } else{
+        ui->definitionLabel->setText("No cards. Try adding some.");
     }
 
     connect(ui->submitButton, &QPushButton::clicked,

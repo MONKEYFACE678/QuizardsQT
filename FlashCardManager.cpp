@@ -17,29 +17,56 @@
 
 using json = nlohmann::json;
 
-void FlashCardManager::getCards() {
-    //Seed random 
-    std::srand(std::time(0));
-
+FlashCardManager::FlashCardManager(){
     QString dirPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(dirPath);
 
-    QString path = dirPath + "/cards.json";
-    QFile file(path);
+    path = dirPath + "/cards.json";
+    file.setFileName(path);
 
+    if (!file.exists()) {
+        if (file.open(QIODevice::WriteOnly)) {
+            file.write("");
+            file.close();
+        }
+    }
+}
+
+void FlashCardManager::loadCards() {
+    //Seed random 
+    std::srand(std::time(0));
+
+    //Try parsing json, then adds each item in cards as a flashcard into cards vector
+    try {
+        json data;
+
+        if(file.open(QIODevice::ReadOnly)){
+            data = json::parse(file.readAll().toStdString());
+        }
+
+        for (json card : data["cards"]) {
+            cards.push_back(FlashCard(card["def"], card["term"]));
+        }
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Error parsing JSON: " << e.what() << std::endl;
+    }
+}
+
+void FlashCardManager::saveCards(){
     if (!file.exists()) {
         if (file.open(QIODevice::WriteOnly)) {
             json defaultData = {
                 {"cards", {
-                    {
-                        {"term", "This is how you format it"},
-                        {"def", std::string("Make cards at ") + path.toStdString()}
-                    },
-                    {
-                        {"term", "This is the word you must enter"},
-                        {"def", std::string("Make cards at ") + path.toStdString() + " You can make multiple"}
-                    }
-                }}
+                              {
+                                  {"term", "This is how you format it"},
+                                  {"def", std::string("Make cards at ") + path.toStdString()}
+                              },
+                              {
+                                  {"term", "This is the word you must enter"},
+                                  {"def", std::string("Make cards at ") + path.toStdString() + " You can make multiple"}
+                              }
+                          }}
             };
 
             file.write(defaultData.dump(4).c_str()); // pretty print
