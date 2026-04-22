@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         FlashCard.h FlashCardManager.h
         json.hpp
         titlewindow.h titlewindow.cpp titlewindow.ui
+        cardaddscreen.h cardaddscreen.cpp cardaddscreen.ui
 
 
 
