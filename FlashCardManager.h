@@ -18,7 +18,7 @@ public:
 
     void loadCards();
     void saveCards();
-    void addCard(FlashCard);
+    void addCard(std::string, std::string);
 	void removeCard(FlashCard);
 	bool isEmpty();
 	FlashCard randomCard();

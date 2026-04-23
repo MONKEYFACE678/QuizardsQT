@@ -22,6 +22,8 @@ MainWindow::MainWindow(QWidget *parent)
         ui->definitionLabel->setText(QString::fromStdString(currentCard.getDef()));
     } else{
         ui->definitionLabel->setText("No cards. Try adding some.");
+        ui->answerInput->setEnabled(false);
+        ui->submitButton->setEnabled(false);
     }
 
     connect(ui->submitButton, &QPushButton::clicked,

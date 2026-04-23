@@ -18,6 +18,9 @@
 using json = nlohmann::json;
 
 FlashCardManager::FlashCardManager(){
+    //Seed random
+    std::srand(std::time(0));
+
     QString dirPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(dirPath);
 
@@ -26,23 +29,24 @@ FlashCardManager::FlashCardManager(){
 
     if (!file.exists()) {
         if (file.open(QIODevice::WriteOnly)) {
-            file.write("");
+            file.write("{\"cards\":[]}");
             file.close();
         }
     }
 }
 
 void FlashCardManager::loadCards() {
-    //Seed random 
-    std::srand(std::time(0));
-
     //Try parsing json, then adds each item in cards as a flashcard into cards vector
     try {
         json data;
 
         if(file.open(QIODevice::ReadOnly)){
-            data = json::parse(file.readAll().toStdString());
+            std::string content = file.readAll().toStdString();
+            file.close();
+            data = json::parse(content);
         }
+
+        cards.clear();
 
         for (json card : data["cards"]) {
             cards.push_back(FlashCard(card["def"], card["term"]));
@@ -54,39 +58,12 @@ void FlashCardManager::loadCards() {
 }
 
 void FlashCardManager::saveCards(){
-    if (!file.exists()) {
-        if (file.open(QIODevice::WriteOnly)) {
-            json defaultData = {
-                {"cards", {
-                              {
-                                  {"term", "This is how you format it"},
-                                  {"def", std::string("Make cards at ") + path.toStdString()}
-                              },
-                              {
-                                  {"term", "This is the word you must enter"},
-                                  {"def", std::string("Make cards at ") + path.toStdString() + " You can make multiple"}
-                              }
-                          }}
-            };
+    if (file.open(QIODevice::WriteOnly)) {
+        json data;
+        data["cards"] = cards;
 
-            file.write(defaultData.dump(4).c_str()); // pretty print
-            file.close();
-        }
-    }
-
-    //Try parsing json, then adds each item in cards as a flashcard into cards vector
-    try {
-        std::ifstream infile(path.toStdString());
-
-        json data = json::parse(infile);
-
-        for (json card : data["cards"]) {
-            cards.push_back(FlashCard(card["def"], card["term"]));
-        }
-    }
-    catch (const std::exception& e) {
-        cards.push_back((FlashCard("No cards. Add cards at " + path.toStdString() + "/cards.json", "No cards")));
-        std::cerr << "Error parsing JSON: " << e.what() << std::endl;
+        file.write(data.dump(4).c_str()); // pretty print
+        file.close();
     }
 }
 
@@ -98,6 +75,10 @@ FlashCard FlashCardManager::randomCard() {
     int index = rand() % cards.size();
 
     return cards[index];
+}
+
+void FlashCardManager::addCard(std::string def, std::string term){
+    cards.push_back(FlashCard(def, term));
 }
 
 void FlashCardManager::removeCard(FlashCard card) {
