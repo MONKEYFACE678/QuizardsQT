@@ -38,10 +38,11 @@ void CardAddScreen::onSubmit() {
     QString term = ui->TermInput->text();
     QString def = ui->DefInput->text();
 
-    qDebug() << "term " << term << " def " << def;
     manager.addCard(def.toStdString(), term.toStdString());
     manager.saveCards();
 
     ui->TermInput->clear();
     ui->DefInput->clear();
+
+    ui->CountLabel->setText("Currently " + QString::number(manager.length()) + " Cards");
 }

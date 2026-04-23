@@ -89,3 +89,7 @@ void FlashCardManager::removeCard(FlashCard card) {
 bool FlashCardManager::isEmpty() {
     return cards.empty();
 }
+
+int FlashCardManager::length(){
+    return cards.size();
+}
