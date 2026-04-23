@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e1ed99ba8d74275462eb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Quizards",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Quizards::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quizards-Debug-3feba5b8cf96e3fc55d0.json",
+					"name" : "Quizards",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Quizards_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quizards_autogen-Debug-3a6e6eb61431d156bb4c.json",
+					"name" : "Quizards_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Quizards_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quizards_autogen_timestamp_deps-Debug-a5fa9331bda717c57148.json",
+					"name" : "Quizards_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
