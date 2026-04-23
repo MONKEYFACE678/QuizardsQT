@@ -31,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->definitionLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
     ui->answerInput->setPlaceholderText("Answer Here...");
+    updateCountLabel();
 }
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
@@ -57,6 +58,7 @@ void MainWindow::onSubmit() {
         if (manager.isEmpty()) {
             ui->definitionLabel->setText("All done!");
             ui->answerInput->setText("");
+            ui->countLabel->setText("");
             ui->answerInput->setEnabled(false);
             ui->submitButton->setEnabled(false);
             return;
@@ -68,7 +70,7 @@ void MainWindow::onSubmit() {
             );
     } else {
         ui->feedbackLabel->setText(
-            "Wrong Answer! Answer was " +
+            "Wrong Answer! Answer was " + ".";
             QString::fromStdString(currentCard.getTerm())
             );
         currentCard = manager.randomCard();
@@ -76,6 +78,11 @@ void MainWindow::onSubmit() {
             QString::fromStdString(currentCard.getDef())
             );
     }
+    updateCountLabel();
 
     ui->answerInput->clear();
+}
+
+void MainWindow::updateCountLabel(){
+    ui->countLabel->setText("Currently " + QString::number(manager.length()) + " Cards");
 }
