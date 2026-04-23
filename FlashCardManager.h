@@ -20,6 +20,7 @@ public:
     void saveCards();
     void addCard(std::string, std::string);
 	void removeCard(FlashCard);
+    void clearCards();
 	bool isEmpty();
     int length();
 	FlashCard randomCard();

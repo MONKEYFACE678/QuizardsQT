@@ -67,6 +67,11 @@ void FlashCardManager::saveCards(){
     }
 }
 
+void FlashCardManager::clearCards(){
+    cards.clear();
+    saveCards();
+}
+
 FlashCard FlashCardManager::randomCard() {
     //Returns a random card if there are cards, if there are no card returns an error card
     if (isEmpty()) {

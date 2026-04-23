@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>340</y>
+     <y>320</y>
      <width>160</width>
      <height>36</height>
     </rect>
@@ -125,6 +125,24 @@
    </property>
    <property name="text">
     <string>Enter here</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ClearButton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>390</y>
+     <width>160</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear Cards</string>
    </property>
   </widget>
  </widget>

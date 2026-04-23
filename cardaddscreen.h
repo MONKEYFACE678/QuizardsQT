@@ -18,9 +18,11 @@ public:
 
 private slots:
     void onSubmit();
+    void clearCards();
 
 private:
     Ui::CardAddScreen *ui;
+    void updateCountLabel();
     bool eventFilter(QObject *object, QEvent *event);
     FlashCardManager manager;
 };
