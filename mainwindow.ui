@@ -67,7 +67,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Answer Here...</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>

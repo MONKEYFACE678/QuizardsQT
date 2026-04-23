@@ -20,6 +20,8 @@ CardAddScreen::CardAddScreen(QWidget *parent)
             this, &CardAddScreen::clearCards);
 
     ui->CountLabel->setText("Currently " + QString::number(manager.length()) + " Cards");
+    ui->DefInput->setPlaceholderText("Enter here...");
+    ui->TermInput->setPlaceholderText("Enter here...");
 }
 
 CardAddScreen::~CardAddScreen()
@@ -27,24 +29,8 @@ CardAddScreen::~CardAddScreen()
     delete ui;
 }
 
-bool CardAddScreen::eventFilter(QObject *object, QEvent *event)
-{
-    //On mouse hover clear text box
-    if (object == ui->TermInput && event->type() == QEvent::HoverEnter) {
-        if(ui->TermInput->text() == "Enter here"){
-            ui->TermInput->clear();
-        }
-    }
-    else if (object == ui->DefInput && event->type() == QEvent::HoverEnter) {
-        if(ui->DefInput->text() == "Enter here"){
-            ui->DefInput->clear();
-        }
-    }
-    return false;
-}
-
 void CardAddScreen::onSubmit() {
-    if(!(ui->TermInput->text() == "Enter here" || ui->TermInput->text() == "" || ui->DefInput->text() == "Enter here" || ui->DefInput->text() == "")){
+    if(!(ui->TermInput->text() == "" || ui->DefInput->text() == "")){
         QString term = ui->TermInput->text();
         QString def = ui->DefInput->text();
 

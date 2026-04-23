@@ -30,14 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::onSubmit);
 
     ui->definitionLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    ui->answerInput->setPlaceholderText("Answer Here...");
 }
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
-    //On mouse hover clear text box
-    if ( object == ui->answerInput &&  ( event->type() == QEvent::HoverEnter )  ) {
-        ui->answerInput->setText("");
-    }
     //On press enter, press submit button
     if ( object == ui->answerInput &&  (event->type() == QEvent::KeyPress )  ) {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);

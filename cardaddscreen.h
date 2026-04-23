@@ -23,7 +23,6 @@ private slots:
 private:
     Ui::CardAddScreen *ui;
     void updateCountLabel();
-    bool eventFilter(QObject *object, QEvent *event);
     FlashCardManager manager;
 };
 
