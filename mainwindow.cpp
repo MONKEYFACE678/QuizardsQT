@@ -15,29 +15,33 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->answerInput->installEventFilter(this);
 
-    manager.getCards();
+    manager.loadCards();
 
     if (!manager.isEmpty()) {
         currentCard = manager.randomCard();
         ui->definitionLabel->setText(QString::fromStdString(currentCard.getDef()));
+    } else{
+        ui->definitionLabel->setText("No cards. Try adding some.");
+        ui->answerInput->setEnabled(false);
+        ui->submitButton->setEnabled(false);
     }
 
     connect(ui->submitButton, &QPushButton::clicked,
             this, &MainWindow::onSubmit);
 
     ui->definitionLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    ui->answerInput->setPlaceholderText("Answer Here...");
+    updateCountLabel();
 }
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
-    if ( object == ui->answerInput &&  ( event->type() == QEvent::HoverEnter )  ) {
-        ui->answerInput->setText("");
-    }
-
+    //On press enter, press submit button
     if ( object == ui->answerInput &&  (event->type() == QEvent::KeyPress )  ) {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
         if (keyEvent->key() == Qt::Key_Return) {
             onSubmit();
+            return true;
         }
     }
     return false;
@@ -54,6 +58,7 @@ void MainWindow::onSubmit() {
         if (manager.isEmpty()) {
             ui->definitionLabel->setText("All done!");
             ui->answerInput->setText("");
+            ui->countLabel->setText("");
             ui->answerInput->setEnabled(false);
             ui->submitButton->setEnabled(false);
             return;
@@ -65,7 +70,7 @@ void MainWindow::onSubmit() {
             );
     } else {
         ui->feedbackLabel->setText(
-            "Try again! Term: " +
+            "Wrong Answer! Answer was " + ".";
             QString::fromStdString(currentCard.getTerm())
             );
         currentCard = manager.randomCard();
@@ -73,6 +78,11 @@ void MainWindow::onSubmit() {
             QString::fromStdString(currentCard.getDef())
             );
     }
+    updateCountLabel();
 
     ui->answerInput->clear();
+}
+
+void MainWindow::updateCountLabel(){
+    ui->countLabel->setText("Currently " + QString::number(manager.length()) + " Cards");
 }

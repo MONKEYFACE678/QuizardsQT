@@ -2,6 +2,7 @@
 #define CARDADDSCREEN_H
 
 #include <QDialog>
+#include "FlashCardManager.h"
 
 namespace Ui {
 class CardAddScreen;
@@ -15,8 +16,15 @@ public:
     explicit CardAddScreen(QWidget *parent = nullptr);
     ~CardAddScreen();
 
+private slots:
+    void onSubmit();
+    void clearCards();
+
 private:
     Ui::CardAddScreen *ui;
+    void updateCountLabel();
+    FlashCardManager manager;
 };
+
 
 #endif // CARDADDSCREEN_H
