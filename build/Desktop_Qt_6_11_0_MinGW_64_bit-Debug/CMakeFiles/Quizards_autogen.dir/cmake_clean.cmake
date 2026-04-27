@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Quizards_autogen"
+  "Quizards_autogen/include/ui_cardaddscreen.h"
   "Quizards_autogen/include/ui_mainwindow.h"
   "Quizards_autogen/include/ui_titlewindow.h"
   "Quizards_autogen/mocs_compilation.cpp"

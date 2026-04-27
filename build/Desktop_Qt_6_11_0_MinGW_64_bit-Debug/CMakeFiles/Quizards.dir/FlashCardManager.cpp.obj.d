@@ -152,22 +152,10 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
- C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\FlashCard.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qstring.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qchar.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QFile \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfile.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
@@ -202,6 +190,14 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qlogging.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qflags.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare_impl.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qatomic.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qbasicatomic.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qatomic_cxx11.h \
@@ -247,6 +243,10 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtresource.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qttranslation.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstdlibdetection.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -260,11 +260,25 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtmetamacros.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfunctionaltools_impl.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qstring.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qchar.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringview.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearray.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtmetamacros.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydata.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qpair.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/string.h \
@@ -277,17 +291,6 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20memory.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
@@ -305,15 +308,6 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringbuilder.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringconverter.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstringconverter_base.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/QFile \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qfile.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qfunctionaltools_impl.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qlist.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qhashfunctions.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
@@ -348,6 +342,7 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qspan.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20iterator.h \
@@ -362,9 +357,29 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\FlashCard.h \
+ C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\json.hpp \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/forward_list \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/valarray \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_before.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/slice_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_after.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/mask_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/indirect_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QIODevice \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QStandardPaths \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qstandardpaths.h \
@@ -396,19 +411,4 @@ CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qfileinfo.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\json.hpp \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/forward_list \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/valarray \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_before.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/slice_array.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_after.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice_array.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/mask_array.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/indirect_array.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtimezone.h

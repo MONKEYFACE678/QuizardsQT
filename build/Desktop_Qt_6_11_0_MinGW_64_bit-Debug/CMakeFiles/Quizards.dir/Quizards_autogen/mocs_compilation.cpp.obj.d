@@ -1,7 +1,7 @@
 CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj: \
  C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Quizards_autogen\mocs_compilation.cpp \
- C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Quizards_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/mainwindow.h \
+ C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Quizards_autogen\EWIEGA46WW/moc_cardaddscreen.cpp \
+ C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/cardaddscreen.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -386,23 +386,6 @@ CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
  C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/FlashCardManager.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
@@ -422,10 +405,64 @@ CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QFile \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfile.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/FlashCard.h \
+ C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/json.hpp \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/forward_list \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/valarray \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.tcc \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_before.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/slice_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_after.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/mask_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/indirect_array.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Quizards_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/mainwindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
  C:\Users\wolfo\OneDrive\Documents\quizardsqt\QuizardQt\QuizardsQT\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Quizards_autogen\EWIEGA46WW/moc_titlewindow.cpp \
  C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/titlewindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \

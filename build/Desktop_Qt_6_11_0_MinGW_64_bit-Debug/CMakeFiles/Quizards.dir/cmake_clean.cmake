@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj.d"
   "CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/Quizards.dir/cardaddscreen.cpp.obj"
+  "CMakeFiles/Quizards.dir/cardaddscreen.cpp.obj.d"
   "CMakeFiles/Quizards.dir/main.cpp.obj"
   "CMakeFiles/Quizards.dir/main.cpp.obj.d"
   "CMakeFiles/Quizards.dir/mainwindow.cpp.obj"

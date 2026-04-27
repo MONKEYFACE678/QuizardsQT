@@ -271,6 +271,30 @@ Quizards_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Quizards.dir\build.make CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.s
 .PHONY : Quizards_autogen/mocs_compilation.cpp.s
 
+cardaddscreen.obj: cardaddscreen.cpp.obj
+.PHONY : cardaddscreen.obj
+
+# target to build an object file
+cardaddscreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Quizards.dir\build.make CMakeFiles/Quizards.dir/cardaddscreen.cpp.obj
+.PHONY : cardaddscreen.cpp.obj
+
+cardaddscreen.i: cardaddscreen.cpp.i
+.PHONY : cardaddscreen.i
+
+# target to preprocess a source file
+cardaddscreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Quizards.dir\build.make CMakeFiles/Quizards.dir/cardaddscreen.cpp.i
+.PHONY : cardaddscreen.cpp.i
+
+cardaddscreen.s: cardaddscreen.cpp.s
+.PHONY : cardaddscreen.s
+
+# target to generate assembly for a file
+cardaddscreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Quizards.dir\build.make CMakeFiles/Quizards.dir/cardaddscreen.cpp.s
+.PHONY : cardaddscreen.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -367,6 +391,9 @@ help:
 	@echo ... Quizards_autogen/mocs_compilation.obj
 	@echo ... Quizards_autogen/mocs_compilation.i
 	@echo ... Quizards_autogen/mocs_compilation.s
+	@echo ... cardaddscreen.obj
+	@echo ... cardaddscreen.i
+	@echo ... cardaddscreen.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

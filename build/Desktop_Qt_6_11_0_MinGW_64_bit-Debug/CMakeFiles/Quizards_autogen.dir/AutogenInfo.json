@@ -347,6 +347,12 @@
 			null
 		],
 		[
+			"C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/cardaddscreen.h",
+			"MU",
+			"EWIEGA46WW/moc_cardaddscreen.cpp",
+			null
+		],
+		[
 			"C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/json.hpp",
 			"MU",
 			"EWIEGA46WW/moc_json.cpp",
@@ -444,6 +450,11 @@
 		],
 		[
 			"C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/FlashCardManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/cardaddscreen.cpp",
 			"MU",
 			null
 		],

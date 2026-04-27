@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/FlashCard.cpp" "CMakeFiles/Quizards.dir/FlashCard.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/FlashCard.cpp.obj.d"
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/FlashCardManager.cpp" "CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/FlashCardManager.cpp.obj.d"
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Quizards_autogen/mocs_compilation.cpp" "CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/Quizards_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/cardaddscreen.cpp" "CMakeFiles/Quizards.dir/cardaddscreen.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/cardaddscreen.cpp.obj.d"
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/main.cpp" "CMakeFiles/Quizards.dir/main.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/main.cpp.obj.d"
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/mainwindow.cpp" "CMakeFiles/Quizards.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/mainwindow.cpp.obj.d"
   "C:/Users/wolfo/OneDrive/Documents/quizardsqt/QuizardQt/QuizardsQT/titlewindow.cpp" "CMakeFiles/Quizards.dir/titlewindow.cpp.obj" "gcc" "CMakeFiles/Quizards.dir/titlewindow.cpp.obj.d"
