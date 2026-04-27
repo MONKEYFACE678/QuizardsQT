@@ -34,7 +34,7 @@
   <widget class="QLabel" name="CountLabel">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>130</x>
      <y>430</y>
      <width>481</width>
      <height>81</height>
