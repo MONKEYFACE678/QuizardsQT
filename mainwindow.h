@@ -31,6 +31,7 @@ private:
 
     FlashCardManager manager;
     FlashCard currentCard;
+    void updateCountLabel();
 };
 
 #endif // MAINWINDOW_H

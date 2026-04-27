@@ -1,6 +1,7 @@
 #include "titlewindow.h"
 #include "ui_titlewindow.h"
 #include "mainwindow.h"
+#include "cardaddscreen.h"
 TitleWindow::TitleWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::TitleWindow)
@@ -16,6 +17,14 @@ TitleWindow::~TitleWindow()
 void TitleWindow::on_pushButton_clicked()
 {
     MainWindow *newWin = new MainWindow(this);
+    newWin->setAttribute(Qt::WA_DeleteOnClose); // Clean up memory when closed
+    newWin->show();
+}
+
+
+void TitleWindow::on_pushButton_3_clicked()
+{
+    CardAddScreen *newWin = new CardAddScreen(this);
     newWin->setAttribute(Qt::WA_DeleteOnClose); // Clean up memory when closed
     newWin->show();
 }

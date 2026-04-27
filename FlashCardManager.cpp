@@ -17,54 +17,59 @@
 
 using json = nlohmann::json;
 
-void FlashCardManager::getCards() {
-    //Seed random 
+FlashCardManager::FlashCardManager(){
+    //Seed random
     std::srand(std::time(0));
 
     QString dirPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
     QDir().mkpath(dirPath);
 
-    QString path = dirPath + "/cards.json";
-    QFile file(path);
+    path = dirPath + "/cards.json";
+    file.setFileName(path);
 
     if (!file.exists()) {
         if (file.open(QIODevice::WriteOnly)) {
-            json defaultData = {
-                {"cards", {
-                    {
-                        {"term", "This is how you format it"},
-                        {"def", std::string("Make cards at ") + path.toStdString()}
-                    },
-                    {
-                        {"term", "This is the word you must enter"},
-                        {"def", std::string("Make cards at ") + path.toStdString() + " You can make multiple"}
-                    }
-                }}
-            };
-
-            file.write(defaultData.dump(4).c_str()); // pretty print
+            file.write("{\"cards\":[]}");
             file.close();
         }
     }
+}
 
-    /*
-
-    */
-
+void FlashCardManager::loadCards() {
     //Try parsing json, then adds each item in cards as a flashcard into cards vector
     try {
-        std::ifstream infile(path.toStdString());
+        json data;
 
-        json data = json::parse(infile);
+        if(file.open(QIODevice::ReadOnly)){
+            std::string content = file.readAll().toStdString();
+            file.close();
+            data = json::parse(content);
+        }
+
+        cards.clear();
 
         for (json card : data["cards"]) {
             cards.push_back(FlashCard(card["def"], card["term"]));
         }
     }
     catch (const std::exception& e) {
-        cards.push_back((FlashCard("No cards. Add cards at " + path.toStdString() + "/cards.json", "No cards")));
         std::cerr << "Error parsing JSON: " << e.what() << std::endl;
     }
+}
+
+void FlashCardManager::saveCards(){
+    if (file.open(QIODevice::WriteOnly)) {
+        json data;
+        data["cards"] = cards;
+
+        file.write(data.dump(4).c_str()); // pretty print
+        file.close();
+    }
+}
+
+void FlashCardManager::clearCards(){
+    cards.clear();
+    saveCards();
 }
 
 FlashCard FlashCardManager::randomCard() {
@@ -77,6 +82,10 @@ FlashCard FlashCardManager::randomCard() {
     return cards[index];
 }
 
+void FlashCardManager::addCard(std::string def, std::string term){
+    cards.push_back(FlashCard(def, term));
+}
+
 void FlashCardManager::removeCard(FlashCard card) {
     //Removes a card matching a given card using vector erase remove
     cards.erase(std::remove(cards.begin(), cards.end(), card), cards.end());
@@ -84,4 +93,8 @@ void FlashCardManager::removeCard(FlashCard card) {
 
 bool FlashCardManager::isEmpty() {
     return cards.empty();
+}
+
+int FlashCardManager::length(){
+    return cards.size();
 }
