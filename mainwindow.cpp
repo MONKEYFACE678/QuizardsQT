@@ -70,7 +70,7 @@ void MainWindow::onSubmit() {
             );
     } else {
         ui->feedbackLabel->setText(
-            "Wrong Answer! Answer was " + ".";
+            "Wrong Answer! Answer was " +
             QString::fromStdString(currentCard.getTerm())
             );
         currentCard = manager.randomCard();
