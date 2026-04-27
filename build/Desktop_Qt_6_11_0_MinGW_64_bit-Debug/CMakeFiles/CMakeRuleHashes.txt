@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-6eaed99cedf22524a71e49a433f4bcc7 CMakeFiles/Quizards_autogen
-42a0f92631889b5ec46128afdecac712 Quizards_autogen/timestamp
