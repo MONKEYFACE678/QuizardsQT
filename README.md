@@ -1,4 +1,4 @@
-### Quizards
+# Quizards
 Quizards is a flashcard generator and interactive study guide​
 - Project Manager/Team Lead: Jayson Coleman​
 - QA Tester: Sean Reedy, Jesse Wolford​
