@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Quizards</string>
   </property>
   <widget class="QPushButton" name="CardButton">
    <property name="geometry">
