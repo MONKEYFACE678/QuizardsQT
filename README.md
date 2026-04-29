@@ -1,30 +1,9 @@
-This is a flashcard application. When you first compile and run it, a json file for storing the cards is created in your appdata folder. The app will say the location of this file. 
+### Quizards
+Quizards is a flashcard generator and interactive study guide​
+- Project Manager/Team Lead: Jayson Coleman​
+- QA Tester: Sean Reedy, Jesse Wolford​
+- Documentation Specialist: Jesse Wolford ​
+- UI Designer: Sean Reedy​
 
-Cards are added in a json format, as follows:
-"cards":[
-
-  {
-  
-    "def":"Definition that will be displayed",
-    
-    "term":"Term that must be entered"
-    
-  },
-  
-  {
-  
-    "def":"Another definition",
-    
-    "term":"Another term"
-    
-  },
-  
-  {
-  
-    "def":"Add a comma after the next curly bracket",
-    
-    "term":"if adding more cards"
-    
-  }
-  
-]
+## Getting Started
+To get started, download the [latest release](https://github.com/MONKEYFACE678/QuizardsQT/releases/latest). Then, extract the zipped folder and run the exe. Click the "Add Cards" button to add new cards, and the "Start" button to get started with quizzing yourself on those cards.
