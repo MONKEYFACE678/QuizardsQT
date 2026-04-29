@@ -37,6 +37,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>24</pointsize>
       <bold>true</bold>
      </font>
@@ -56,6 +57,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>18</pointsize>
       <bold>true</bold>
      </font>
@@ -67,14 +69,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>270</x>
       <y>140</y>
-      <width>241</width>
+      <width>261</width>
       <height>91</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Algerian</family>
       <pointsize>36</pointsize>
       <bold>true</bold>
      </font>
@@ -97,6 +100,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>24</pointsize>
       <bold>true</bold>
      </font>
@@ -112,7 +116,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

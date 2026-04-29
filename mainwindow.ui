@@ -45,6 +45,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>18</pointsize>
       <bold>true</bold>
      </font>
@@ -64,6 +65,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>18</pointsize>
      </font>
     </property>
@@ -85,6 +87,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>24</pointsize>
      </font>
     </property>
@@ -127,12 +130,13 @@
      <rect>
       <x>300</x>
       <y>90</y>
-      <width>181</width>
+      <width>221</width>
       <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>24</pointsize>
       <bold>true</bold>
      </font>
@@ -155,6 +159,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Verdana</family>
       <pointsize>16</pointsize>
      </font>
     </property>
